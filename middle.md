@@ -91,3 +91,93 @@ for fileN in filelist:
         print(curfile)
         OutFile = cwd+"\\New_"+fileN
         f51MngPro(curfile,OutFile)
+        
+        
+// 59_Pro_ubbpg.py
+import os
+
+def f51MngPro(fileName,fOutName):
+    fout = open(fOutName,'a')
+    fi = open(fileName)
+    haerAdded =",firstTime,SecTime,ULSCHTime,PDCCHTime,MNGTime,PostTime,DLSCHTime,CorrelationTime,SCHFrasePerUsr"+'\n'
+    headline = fi.readline()
+    headline = headline[0:headline.__len__()-2]+haerAdded
+    fout.write(headline)
+    sStart = headline.split(',')
+    indexFreq = sStart.index("ulFreq")
+    indexFrmInt = sStart.index("FrameIntTime")
+    ulSubFrameIndex = sStart.index("ucSubFrm");
+    IndexStart=[]
+    IndexEnd =[]
+    #first
+    IndexStart.append(sStart.index("Ulsch1stBeginTime"))
+    IndexEnd.append(sStart.index("Ulsch1stEndTime"))
+    #second
+    IndexStart.append(sStart.index("Ulsch2ndBeginTime"))
+    IndexEnd.append(sStart.index("Ulsch2ndEndTime"))
+    #ulsch
+    IndexStart.append(sStart.index("UserSchBeginTime"))
+    IndexEnd.append(sStart.index("UserSchEndTime"))
+    # PDCCH
+    IndexStart.append(sStart.index("DciLockedTime"))
+    IndexEnd.append(sStart.index("PdcchTime"))
+    # mng
+    IndexStart.append(sStart.index("PdcchTime"))
+    IndexEnd.append(sStart.index("UlschEndTime"))
+    # Post
+    IndexStart.append(sStart.index("UlschEndTime"))
+    IndexEnd.append(sStart.index("UlschFinishTime"))
+    # DLSCH time
+    IndexStart.append(sStart.index("Ulsch1stEndTime"))
+    IndexEnd.append(sStart.index("Ulsch2ndBeginTime"))
+    #perUsr
+    indexUser = sStart.index("ulSchUserNum")
+    UlschTime = 0
+	#UlschCorrelationTime
+    IndexStart.append(sStart.index("UlschFinishTime"))
+    IndexEnd.append(sStart.index("UlschCorrelationTime"))
+	
+    for eachline in fi:
+        sStart = eachline.split(',')
+        if(sStart[0] == "HH:MM:SS"):
+            continue
+        index = indexFrmInt + 1
+        ulFrmInt = int(sStart[indexFrmInt])
+        ulFre = int(sStart[indexFreq])
+        ulSubFrame = int(sStart[ulSubFrameIndex])
+        maxLen = sStart.__len__()-1
+        strS = ","
+        while index < maxLen:
+            sStart[index] = str((int(sStart[index])-ulFrmInt)/ulFre)
+            index = index +1
+        sStart.pop()
+        for i in range(0,IndexStart.__len__(),1):
+            indS = IndexStart[i]
+            indE = IndexEnd[i]
+            if(ulSubFrame == 2 or ulSubFrame == 7):
+                indE = IndexEnd[4]
+            #dat = int(sStart[indE]) - int(sStart[indS])
+            dat = float(sStart[indE]) - float(sStart[indS])
+            if(i == 2):
+                UlschTime = dat
+            sStart.append(str(dat))
+        indS = int(sStart[indexUser])
+        if(indS != 0):
+            sStart.append(str(float(UlschTime)/float(indS)))
+        else:
+            sStart.append(str(0))
+        sStart.append(str('\n'))
+        Newline = strS.join(sStart)
+        fout.write(Newline)
+    fout.close()
+    fi.close()
+
+cwd = os.getcwd()
+filelist = os.listdir(cwd)
+for fileN in filelist:
+    curfile = cwd+"\\"+fileN
+    if os.path.isfile(curfile) and 'Dest_T059' in curfile and 'csv' in curfile and 'New' not in curfile:
+        print(curfile)
+        OutFile = cwd+"\\New_"+fileN
+        f51MngPro(curfile,OutFile)
+
