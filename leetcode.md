@@ -153,10 +153,10 @@
   - [208. Implement Trie (Prefix Tree) (Medium)](https://leetcode.com/problems/implement-trie-prefix-tree/description/)
   - [677. Map Sum Pairs (Medium)](https://leetcode.com/problems/map-sum-pairs/description/)
 - 栈和队列
-  - [232. Implement Queue using Stacks (Easy)](https://leetcode.com/problems/implement-queue-using-stacks/description/)
-  - [225. Implement Stack using Queues (Easy)](https://leetcode.com/problems/implement-stack-using-queues/description/)
-  - [155. Min Stack (Easy)](https://leetcode.com/problems/min-stack/description/)
-  - [20. Valid Parentheses (Easy)](https://leetcode.com/problems/valid-parentheses/description/)
+  - 【√】[232. Implement Queue using Stacks (Easy)](https://leetcode.com/problems/implement-queue-using-stacks/description/)
+  - 【√】[225. Implement Stack using Queues (Easy)](https://leetcode.com/problems/implement-stack-using-queues/description/)
+  - 【√】[155. Min Stack (Easy)](https://leetcode.com/problems/min-stack/description/)
+  - 【√】[20. Valid Parentheses (Easy)](https://leetcode.com/problems/valid-parentheses/description/)
   - [739. Daily Temperatures (Medium)](https://leetcode.com/problems/daily-temperatures/description/)
   - [503. Next Greater Element II (Medium)](https://leetcode.com/problems/next-greater-element-ii/description/)
 - 哈希表
