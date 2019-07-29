@@ -157,8 +157,8 @@
   - 【√】[225. Implement Stack using Queues (Easy)](https://leetcode.com/problems/implement-stack-using-queues/description/)
   - 【√】[155. Min Stack (Easy)](https://leetcode.com/problems/min-stack/description/)
   - 【√】[20. Valid Parentheses (Easy)](https://leetcode.com/problems/valid-parentheses/description/)
-  - [739. Daily Temperatures (Medium)](https://leetcode.com/problems/daily-temperatures/description/)
-  - [503. Next Greater Element II (Medium)](https://leetcode.com/problems/next-greater-element-ii/description/)
+  - 【√】[739. Daily Temperatures (Medium)](https://leetcode.com/problems/daily-temperatures/description/)
+  - 【√】[503. Next Greater Element II (Medium)](https://leetcode.com/problems/next-greater-element-ii/description/)
 - 哈希表
   - 【√】[1. Two Sum (Easy)](https://leetcode.com/problems/two-sum/description/)
   - 【√】[217. Contains Duplicate (Easy)](https://leetcode.com/problems/contains-duplicate/description/)
