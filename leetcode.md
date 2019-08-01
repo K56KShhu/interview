@@ -202,5 +202,5 @@
   - 【√】[693. Binary Number with Alternating Bits (Easy)](https://leetcode.com/problems/binary-number-with-alternating-bits/description/)
   - 【√】[476. Number Complement (Easy)](https://leetcode.com/problems/number-complement/description/)
   - [371. Sum of Two Integers (Easy)](https://leetcode.com/problems/sum-of-two-integers/description/)
-  - [318. Maximum Product of Word Lengths (Medium)](https://leetcode.com/problems/maximum-product-of-word-lengths/description/)
+  - 【√】[318. Maximum Product of Word Lengths (Medium)](https://leetcode.com/problems/maximum-product-of-word-lengths/description/)
   - [338. Counting Bits (Medium)](https://leetcode.com/problems/counting-bits/description/)
