@@ -109,12 +109,12 @@
 
 - 链表
 
-  - [160. Intersection of Two Linked Lists (Easy)](https://leetcode.com/problems/intersection-of-two-linked-lists/description/)
-  - [206. Reverse Linked List (Easy)](https://leetcode.com/problems/reverse-linked-list/description/)
-  - [21. Merge Two Sorted Lists (Easy)](https://leetcode.com/problems/merge-two-sorted-lists/description/)
-  - [83. Remove Duplicates from Sorted List (Easy)](https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/)
-  - [19. Remove Nth Node From End of List (Medium)](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)
-  - [24. Swap Nodes in Pairs (Medium)](https://leetcode.com/problems/swap-nodes-in-pairs/description/)
+  - 【√】[160. Intersection of Two Linked Lists (Easy)](https://leetcode.com/problems/intersection-of-two-linked-lists/description/)
+  - 【√】[206. Reverse Linked List (Easy)](https://leetcode.com/problems/reverse-linked-list/description/)
+  - 【√】[21. Merge Two Sorted Lists (Easy)](https://leetcode.com/problems/merge-two-sorted-lists/description/)
+  - 【√】[83. Remove Duplicates from Sorted List (Easy)](https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/)
+  - 【√】[19. Remove Nth Node From End of List (Medium)](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)
+  - 【√】[24. Swap Nodes in Pairs (Medium)](https://leetcode.com/problems/swap-nodes-in-pairs/description/)
   - [445. Add Two Numbers II (Medium)](https://leetcode.com/problems/add-two-numbers-ii/description/)
   - [234. Palindrome Linked List (Easy)](https://leetcode.com/problems/palindrome-linked-list/description/)
   - [725. Split Linked List in Parts(Medium)](https://leetcode.com/problems/split-linked-list-in-parts/description/)
