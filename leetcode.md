@@ -121,10 +121,10 @@
   - 【√】[328. Odd Even Linked List (Medium)](https://leetcode.com/problems/odd-even-linked-list/description/)
 - 树
 
-  - [104. Maximum Depth of Binary Tree (Easy)](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)
-  - [110. Balanced Binary Tree (Easy)](https://leetcode.com/problems/balanced-binary-tree/description/)
-  - [543. Diameter of Binary Tree (Easy)](https://leetcode.com/problems/diameter-of-binary-tree/description/)
-  - [226. Invert Binary Tree (Easy)](https://leetcode.com/problems/invert-binary-tree/description/)
+  - 【√】[104. Maximum Depth of Binary Tree (Easy)](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)
+  - 【√】[110. Balanced Binary Tree (Easy)](https://leetcode.com/problems/balanced-binary-tree/description/)
+  - 【√】[543. Diameter of Binary Tree (Easy)](https://leetcode.com/problems/diameter-of-binary-tree/description/)
+  - 【√】[226. Invert Binary Tree (Easy)](https://leetcode.com/problems/invert-binary-tree/description/)
   - [617. Merge Two Binary Trees (Easy)](https://leetcode.com/problems/merge-two-binary-trees/description/)
   - [112. Path Sum (Easy)](https://leetcode.com/problems/path-sum/description/)
   - [437. Path Sum III (Easy)](https://leetcode.com/problems/path-sum-iii/description/)
